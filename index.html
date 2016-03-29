@@ -5,9 +5,37 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<canvas id="current-temp">
-		<!-- The Temperature canvas style -->
-	</canvas>
+	<h1>Weather</h1>
+		<form id="citySearch">
+			<input id="city" type="text">
+			<input type="submit" value="Get Weather">
+		</form>
+
+		<canvas id="current-temp">
+			<!-- The Temperature canvas style -->
+		</canvas>
+		<div id="weather-grid">
+			<div id="humidity">
+			Humidity:
+			<span class="humidity-Number">0</span>
+			</div>
+			<div id="max-temp">
+			Max Temperature:
+			<span class="max-Number">0</span>
+			</div>
+			<div id="min-temp">
+			Min Temperature:
+			<span class="min-Number">0</span>
+			</div>
+			<div id="win">
+			Wind Speed:
+			<span class="wind-Number">0</span>
+			</div>
+			<div id="name">
+			Name:
+			<span class="name-Number">0</span>
+			</div>
+		</div>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
